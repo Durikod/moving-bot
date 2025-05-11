@@ -42,16 +42,11 @@ async def services(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = (
         f"📦 Переезд из: {context.user_data['location_from']}\n"
-"
-        f"📍 В: {context.user_data['location_to']}
-"
-        f"🏠 Комнат: {context.user_data['rooms']}
-"
-        f"🛗 Лифт: {context.user_data['elevator']}
-"
-        f"🧰 Услуги: {context.user_data['services']}
-
-"
+    f"📍 В: {context.user_data['location_to']}\n"
+    f"🏠 Комнат: {context.user_data['rooms']}\n"
+    f"🛗 Лифт: {context.user_data['elevator']}\n"
+    f"🧰 Услуги: {context.user_data['services']}\n\n"
+    f"💵 Предварительная цена: ${base_price}"
         f"💵 Предварительная цена: ${base_price}"
     )
     await update.message.reply_text(text)
