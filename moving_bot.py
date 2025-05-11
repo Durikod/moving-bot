@@ -41,7 +41,7 @@ async def services(update: Update, context: ContextTypes.DEFAULT_TYPE):
         base_price += 100
 
     text = (
-        f"📦 Переезд из: {context.user_data['location_from']}
+        f"📦 Переезд из: {context.user_data['location_from']}\n"
 "
         f"📍 В: {context.user_data['location_to']}
 "
